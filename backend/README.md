@@ -11,6 +11,10 @@ Build your image:
 Run:
 `docker run -p 8080:<server-port> <<username>/<project-name>>`
 
+Example:
+in parent directory: `docker build ./backend -t shaurcasm/backend`
+Run: `docker run -p 8080:5000 shaurcasm/backend`
+
 Basic Docker Commands:
 List your docker images: `docker images`
 List your running containers: `docker ps`
