@@ -1,0 +1,54 @@
+$primary: #003399;
+
+.homepage {
+  width: 100vw;
+  height: 100vh;
+  background-color: #F0F0F0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  .home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+
+  .favourites {
+    margin-bottom: 45px;
+
+    .favourites-header {
+      color: $primary;
+      text-align: start;
+    }
+
+    .favourites-list {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      overflow: auto;
+    }
+  }
+
+  .contacts {
+    flex-grow: 1;
+
+    .contacts-header {
+      color: $primary;
+      text-align: start;
+    }
+
+    .contacts-list {
+      display: flex;
+      flex-direction: column;
+      overflow: auto;
+    }
+  }
+}
+

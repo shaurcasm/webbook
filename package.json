@@ -1,0 +1,24 @@
+{
+  "name": "webbook",
+  "version": "1.0.0",
+  "description": "Incomplete Full stack app for contact list.",
+  "main": "./frontend/src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently --kill-others-on-fail \"cd backend && sudo docker-compose up\" \"cd frontend && npm start\"",
+    "install": "cd backend && npm install && cd ../frontend && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaurcasm/webbook.git"
+  },
+  "author": "Shaurya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shaurcasm/webbook/issues"
+  },
+  "homepage": "https://github.com/shaurcasm/webbook#readme",
+  "devDependencies": {
+    "concurrently": "^6.4.0"
+  }
+}
